@@ -1,0 +1,2 @@
+Let's work on our foundations in Python. 
+Study 'Python Crash Course', 'Learning Python', 'Fluent Python' and Udemy courses.

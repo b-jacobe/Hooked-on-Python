@@ -1,0 +1,6 @@
+In Python you can store values in variables based on a specific type (string, int, etc.)
+In Python you can store a series of items in a particular order within a list.
+In Python you can access items using index, or within a loop.
+In Python you can create tuples; they're similar to list but immutable.
+In Python you can test particular conditions and respond appropriately by using If-Else statements.
+In Python you can store connections between pieces of information using a key-value pair within what's known as a dictionary.
