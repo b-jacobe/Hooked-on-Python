@@ -1,8 +1,3 @@
-# ====================
-# 2_8_number_eight.py
-# Author: Brian Jacobe
-# Date: 1/5/2019
-# ====================
 addition = 6 + 2
 substraction = 10 - 2
 multiplication = 2 * 4

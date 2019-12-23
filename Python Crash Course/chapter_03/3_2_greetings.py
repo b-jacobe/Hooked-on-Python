@@ -1,18 +1,3 @@
-"""
-3_2_greetings.py
-
-Start with the list you used in Excercise 3-1, but instead
-of just printing each name, print a message to them. The
-text of each message should be the same, but each message
-should be personalized with the person's name
-
-BONUS: Added for loop to clean the code
-
-Created: 1-12-19
-Last Updated: 
-@author: Brian Jacobe
-
-"""
 
 names = ['Brian', 'Khia', 'Adam', 'Emily', 'Aygun', 'Deborah', 'Jonathan']
 
