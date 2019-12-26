@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/Users/bjacobe/Desktop/Hooked\ on\ Python/Web/polls/template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,6 +67,7 @@ TEMPLATES = [
         },
     },
 ]
+PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 
 WSGI_APPLICATION = 'Web.wsgi.application'
 
