@@ -6,13 +6,15 @@ called show_magicians(), which prints the name of each magician in the list.
 
 Created: 2-11-19
 @author: Brian Jacobe
+Updated: 12-28-19
 
 """
 
 def show_magicians(magician):
-	for mage in magician:
-		message = mage.title()
-		print(message)
+  result = list()
+  for mage in magician:
+	  result.append(mage.title())
+  return result
 
 magician_names = ["Harry", "Gandalf", "Yen Sid"]
 
