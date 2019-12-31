@@ -10,6 +10,7 @@ Create several instances representing different users, and call both methods
 for each user.
 
 Created: 2-26-19
+Updated: 12-30-19
 @author: Brian Jacobe
 
 """
@@ -26,16 +27,16 @@ class User():
 		self.weight = weight
 
 	def describe_user(self):
-		print("Here are some fun facts about the you: ")
-		print("Age: " + str(self.age))
-		print("Salary: " + str(self.salary))
-		print("Height: " + self.height)
-		print("Weight: " + str(self.weight) + "lbs.")
-		return ""
+		description = "Here are some fun facts about the you: " + "\n" +
+			"Age: " + str(self.age) + "\n" +
+			"Salary: " + str(self.salary) + "\n" +
+			"Height: " + self.height + "\n" +
+			"Weight: " + str(self.weight) + " lbs."
+		return description
 
 	def greet_user(self):
-		print("Hello, " + self.first_name.title() + " " + self.last_name.title() + "!")
-		return ""
+		greetings = "Hello, " + self.first_name.title() + " " + self.last_name.title() + "!"
+		return greetings
 
 new_user = User("Brian", "Jacobe", 27, 120000, "5'6", 156)
 print(new_user.greet_user())
