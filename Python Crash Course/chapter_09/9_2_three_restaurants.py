@@ -16,12 +16,12 @@ class Restaurant():
 		self.cuisine_type = cuisine_type
 
 	def describe_resturant(self):
-		print(self.resturant_name.title() + " is a " + self.cuisine_type + " restaurant.")
-		return ""
+		description = self.resturant_name.title() + " is a " + self.cuisine_type + " restaurant."
+		return description
 
 	def open_restaurant(self):
-		print(self.resturant_name.title() + " is open!")
-		return ""
+		status = self.resturant_name.title() + " is open!"
+		return status
 
 panda_restaurant = Restaurant("Panda Express", "Fast Food")
 harmony_restaurant = Restaurant("Harmony", "Asian Cuisine")
