@@ -30,6 +30,8 @@ Coco = {
 
 pets = [Max, Luna, Coco]
 
+# Create Pet Class to return Pet description without repeating uncessary print calls
+
 print("Jacobe Family Pets:")
 for pet in pets:
 	if pet["pet_name"] == "Max":
