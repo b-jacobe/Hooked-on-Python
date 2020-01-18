@@ -23,6 +23,3 @@ def number_of_coins(cents):
 #TEST CASES
 print(number_of_coins(67))
 print(number_of_coins(55))
-
-p_challenge_value = 2**38
-print(p_challenge_value)
