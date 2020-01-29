@@ -3,7 +3,7 @@ class DoublyLinkedList:  # making main class named doubly linked list
         self.head = None
         self.tail = None
 
-    def insertHead(self, x):
+    def insert_head(self, x):
         newLink = Link(x)  # Create a new link with a value attached to it
         if self.isEmpty() == True:  # Set the first element added to be the tail
             self.tail = newLink
@@ -12,7 +12,7 @@ class DoublyLinkedList:  # making main class named doubly linked list
         newLink.next = self.head  # newLink <--> currenthead(head)
         self.head = newLink  # newLink(head) <--> oldhead
 
-    def deleteHead(self):
+    def delete_head(self):
         temp = self.head
         self.head = self.head.next  # oldHead <--> 2ndElement(head)
         self.head.previous = None  # oldHead --> 2ndElement(head) nothing pointing at it so the old head will be removed
@@ -20,14 +20,14 @@ class DoublyLinkedList:  # making main class named doubly linked list
             self.tail = None  # if empty linked list
         return temp
 
-    def insertTail(self, x):
+    def insert_tail(self, x):
         newLink = Link(x)
         newLink.next = None  # currentTail(tail)    newLink -->
         self.tail.next = newLink  # currentTail(tail) --> newLink -->
         newLink.previous = self.tail  # currentTail(tail) <--> newLink -->
         self.tail = newLink  # oldTail <--> newLink(tail) -->
 
-    def deleteTail(self):
+    def delete_tail(self):
         temp = self.tail
         self.tail = self.tail.previous  # 2ndLast(tail) <--> oldTail --> None
         self.tail.next = None  # 2ndlast(tail) --> None
@@ -40,10 +40,10 @@ class DoublyLinkedList:  # making main class named doubly linked list
             current = current.next
 
         if current == self.head:
-            self.deleteHead()
+            self.delete_head()
 
         elif current == self.tail:
-            self.deleteTail()
+            self.delete_tail()
 
         else:  # Before: 1 <--> 2(current) <--> 3
             current.previous.next = current.next  # 1 --> 3
@@ -69,3 +69,17 @@ class Link:
 
     def displayLink(self):
         print(f"{self.value}", end=" ")
+       
+def main():
+    D = DoublyLinkedList()
+    D.insert_head(input("Inserting 1st at head ").strip())
+    D.insert_head(input("Inserting 2nd at head ").strip())
+    print("\nPrint list:")
+    D.display()
+    D.insert_tail(input("Inserting 1st at tail ").strip())
+    D.insert_tail(input("Inserting 2nd at tail ").strip())
+    print("\nPrint list:")
+    D.display()
+    
+if __name__ == "__main__":
+    main()
