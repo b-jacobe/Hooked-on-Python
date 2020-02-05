@@ -12,10 +12,13 @@ def check_key(dict, key):
         return False
 
 def print_arithmetic(t, a, b):
-    arith = {"addition":"+", "subtraction":"-", "multiplication":"*", "division":"/", "modulo":"%"}
+    arith = {"addition":"+", "subtraction":"-", "multiplication":"*", "division":"/", "modulo":"%","floor":"//","ceil":"//"}
     if check_key(arith, t):
         message = t + " : " + str(a) + " " + arith[t] + " " + str(b) + " = "
-        return message + str(eval(str(a) + arith[t] + str(b)))
+        if t == "ceil":
+            return message + str(eval("-(-" + str(a) + arith[t] + str(b) + ")"))
+        else:
+            return message + str(eval(str(a) + arith[t] + str(b)))
     else:
         return "Error: arithmetic entered is invalid."
 
@@ -31,5 +34,9 @@ print(print_arithmetic("multiplication",3,3))
 print(print_arithmetic("division",10,2))
 # Modulo
 print(print_arithmetic("modulo",7,4))
+# Floor
+print(print_arithmetic("floor",5,4))
+# Ceil
+print(print_arithmetic("ceil",4,3))
 # ERROR TEST
 print(print_arithmetic("test",8,8)) 
