@@ -9,8 +9,11 @@ of coins needed to represent it.
 """
 
 def number_of_coins(cents):
+    # U.S. coin value list
     coin_list = [100,25,10,5,1]
-    least_coins = []
+    least_coins = list()
+    # Floor expression to check if cents 
+    # can be appended to least_coin
     for coin in coin_list:
         number_coins = cents//coin
         if number_coins == 0:
@@ -20,6 +23,7 @@ def number_of_coins(cents):
             least_coins.extend(number_coins * [coin])
     return least_coins
 
-#TEST CASES
+# Driver Code
 print(number_of_coins(67))
 print(number_of_coins(55))
+print(number_of_coins(99))
