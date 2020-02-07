@@ -26,24 +26,23 @@ def print_arithmetic(t, a, b=0.5):
         return "Error: arithmetic entered is invalid."
 
 # Driver Code
-
-# Addtition
-print(print_arithmetic("addition",2,2))
-# Subtraction
-print(print_arithmetic("subtraction",5,2))
-# Multiplication
-print(print_arithmetic("multiplication",3,3))
-# Division
-print(print_arithmetic("division",10,2))
-# Modulo
-print(print_arithmetic("modulo",7,4))
-# Floor
-print(print_arithmetic("floor",5,4))
-# Ceil
-print(print_arithmetic("ceil",4,3))
-# Power
-print(print_arithmetic("power",2,4))
-# Square
-print(print_arithmetic("square",4))
-# ERROR TEST
-print(print_arithmetic("test",8,8)) 
+if __name__ == '__main__':
+  print_arithmetic("addition",2,2)
+  # Subtraction
+  print_arithmetic("subtraction",5,2)
+  # Multiplication
+  print_arithmetic("multiplication",3,3)
+  # Division
+  print_arithmetic("division",10,2)
+  # Modulo
+  print_arithmetic("modulo",7,4)
+  # Floor
+  print_arithmetic("floor",5,4)
+  # Ceil
+  print_arithmetic("ceil",4,3)
+  # Power
+  print_arithmetic("power",2,4)
+   # Square
+  print_arithmetic("square",4)
+  # ERROR TEST
+  print_arithmetic("test",8,8)  
