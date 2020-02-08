@@ -21,9 +21,10 @@ def number_of_coins(cents):
         else:
             cents = cents - number_coins * coin
             least_coins.extend(number_coins * [coin])
-    return least_coins
+    return print(least_coins)
 
 # Driver Code
-print(number_of_coins(67))
-print(number_of_coins(55))
-print(number_of_coins(99))
+if __name__ == "__main__":
+    number_of_coins(67)
+    number_of_coins(55)
+    number_of_coins(99)
