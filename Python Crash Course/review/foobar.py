@@ -21,4 +21,5 @@ def foo_bar():
       print(n)
 
 # Driver Code
-foo_bar()
+if __name__ == "__main__":
+  foo_bar()
