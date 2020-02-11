@@ -20,14 +20,13 @@ class Restaurant():
 		self.cuisine_type = cuisine_type
 
 	def describe_resturant(self):
-		print(self.resturant_name.title() + " is a " + self.cuisine_type + " restaurant.")
-		return ""
+		return print(self.resturant_name.title() + " is a " + self.cuisine_type + " restaurant.")
 
 	def open_restaurant(self):
-		print(self.resturant_name.title() + " is open!")
-		return ""
+		return print(self.resturant_name.title() + " is open!")
 
-panda_restaurant = Restaurant("Panda Express", "Fast Food")
-
-print(panda_restaurant.describe_resturant())
-print(panda_restaurant.open_restaurant())
+#Driver Code
+if "__name__" == "__main__":
+	panda_restaurant = Restaurant("Panda Express", "Fast Food")
+	print(panda_restaurant.describe_resturant())
+	print(panda_restaurant.open_restaurant())
